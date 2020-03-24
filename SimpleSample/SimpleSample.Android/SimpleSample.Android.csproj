@@ -49,12 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Syncfusion.Xamarin.Core">
-      <Version>17.4.0.39</Version>
-    </PackageReference>
-    <PackageReference Include="Syncfusion.Xamarin.SfChart">
-      <Version>17.4.0.39</Version>
-    </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.Core" Version="*" />
+    <PackageReference Include="Syncfusion.Xamarin.SfChart" Version="*" />
     <PackageReference Include="Xamarin.Forms">
       <Version>4.1.0.778454</Version>
     </PackageReference>
