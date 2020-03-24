@@ -87,6 +87,7 @@ namespace SimpleSample
             stackingBar100Series.DataMarker = new ChartDataMarker();
             stackingBar100Series.DataMarker.ShowLabel = true;
             stackingBar100Series.DataMarker.LabelStyle.TextColor = Color.White;
+            stackingBar100Series.DataMarker.LabelStyle.LabelPosition = DataMarkerLabelPosition.Center;
             stackingBar100Series.DataMarkerPosition = DataMarkerPosition.Center;
             Series.Add(stackingBar100Series);
         }
