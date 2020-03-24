@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SimpleSample"
+             xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
+             x:Class="SimpleSample.MainPage" >
+    
+        <Grid VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="6*"/>
+            </Grid.RowDefinitions>
+            <local:PieChartExt x:Name="Chart" Grid.Row="0" ItemsSource="{Binding Data}" XBindingPath="Component" YBindingPath="Price" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+            <chart:SfChart.Title>
+                <chart:ChartTitle Text="A Linear PieChart"  />
+            </chart:SfChart.Title>
+            <chart:SfChart.BindingContext>
+                <local:ViewModel x:Name="viewModel" />
+            </chart:SfChart.BindingContext>
+            <chart:SfChart.PrimaryAxis>
+                <chart:CategoryAxis IsVisible="False" ShowMajorGridLines="False" >
+                </chart:CategoryAxis>
+            </chart:SfChart.PrimaryAxis>
+                <chart:SfChart.SecondaryAxis>
+                    <chart:NumericalAxis IsVisible="False" ShowMajorGridLines="False">
+                    </chart:NumericalAxis>
+                </chart:SfChart.SecondaryAxis>
+            <chart:SfChart.ColorModel>
+                <chart:ChartColorModel Palette="Natural"/>
+            </chart:SfChart.ColorModel>
+        </local:PieChartExt>
+        </Grid>
+</ContentPage>
