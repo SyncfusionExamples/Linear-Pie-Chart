@@ -1,14 +1,10 @@
-﻿using Syncfusion.SfChart.XForms;
-using System;
-using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace SimpleSample
@@ -19,14 +15,12 @@ namespace SimpleSample
         {
             InitializeComponent();
         }
-
         private void Button_Clicked(object sender, EventArgs e)
         {
             viewModel.Data.Add(new PriceData() { Component = "Hard Disk", Price = 80 });
         }
     }
-
-    public class ViewModel :INotifyPropertyChanged
+    public class ViewModel : INotifyPropertyChanged
     {
 
         public ObservableCollection<PriceData> Data1 { get; set; }
@@ -68,5 +62,4 @@ namespace SimpleSample
 
         public double Price { get; set; }
     }
-
 }
