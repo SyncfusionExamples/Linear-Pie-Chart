@@ -83,7 +83,7 @@ namespace SimpleSample
                 YBindingPath = YBindingPath,
                 Width = 0.7,
             };
-            
+
             stackingBar100Series.DataMarker = new ChartDataMarker();
             stackingBar100Series.DataMarker.ShowLabel = true;
             stackingBar100Series.DataMarker.LabelStyle.TextColor = Color.White;
